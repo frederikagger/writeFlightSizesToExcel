@@ -13,7 +13,6 @@ def findSize(flightNumber):
             found = True
         if found:
             if row.strip() == 'L':
-                print('L')
                 return 'L'
             if row.strip() == 'M':
                 return 'M'
