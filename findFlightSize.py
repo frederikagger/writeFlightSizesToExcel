@@ -6,8 +6,10 @@ soup = BeautifulSoup(source, 'html.parser')
 html = soup.find('html')
 
 
+# def that return a size when given a flightnumber
 def findSize(flightNumber):
     found = False
+    #loop through the html and
     for row in html.find_all_next(string=True):
         if flightNumber in row:
             found = True

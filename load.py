@@ -2,6 +2,7 @@ from openpyxl import load_workbook
 from findFlightSize import findSize
 
 
+# def that returns an array of the 5th column in the active sheet from the excel document
 def loadData():
     doc = load_workbook(filename='CPH_KEA sep2019-1.xlsx')
     ws = doc.active
